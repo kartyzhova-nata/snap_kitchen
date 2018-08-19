@@ -1,1 +1,380 @@
 @import url(./reset.css);
+
+@font-face {
+    font-family: GALANO GROTESQUE; /* Имя шрифта */
+    src: url(../fonts/Galano_Grotesque_ Bold.otf); /* Путь к файлу со шрифтом */
+}
+
+/*common styles*/
+.container{
+    width: 410px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'GALANO GROTESQUE', sans-serif;
+    font-size: 14px;
+}
+
+.label {
+    margin-left: 10px;
+}
+
+/*label styles*/
+.label-container {
+    height: 66px;
+    background: #d83c54;
+    display: flex;
+    align-items: center;
+}
+.label-container img {
+    width: 134px;
+    height: 26px;
+    display: inline-block;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/*make changes styles*/
+.make-changes-container {
+    height: 242px;
+    color: #fff;
+    background: linear-gradient(to bottom right, #f04c34, #f034a8);
+    padding: 15px;
+}
+.make-changes-container .greeting {
+    font-size: 19px;
+    margin: 35px 0;
+}
+.make-changes-container .making-changes {
+    font-size: 26px;
+    margin: 35px 90px 10px 0;  
+}
+.make-changes-container .make-changes-btn {
+    background: #fff;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #565353;
+    line-height: 45px;
+    width: 250px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+/*plan,schedule and summary styles*/
+.plan-container,
+.schedule-container,
+.summary-container {
+    color: #565353;
+    text-transform: uppercase;
+    padding: 15px;
+    border: 1px solid #eeeded;
+    border-radius: 20px;
+    margin: 40px auto 25px auto;
+    width: 380px;
+    box-sizing: border-box;
+    box-shadow: 0 7px 18px -2px #ececec;
+}
+.schedule-container,
+.summary-container {
+    margin-top: 0;
+}
+
+.plan-container .plan-label,
+.schedule-container .schedule-label,
+.summary-container .summary-label {
+    margin-bottom: 15px;
+}
+
+.plan-container .plan-content,
+.schedule-container .schedule-content,
+.summary-container .summary-content
+{
+    text-transform: none;
+    font-size: 16px;
+    word-wrap: wrap;
+    border-top: 1px solid #eeeded;
+    border-bottom: 1px solid #eeeded;
+    padding: 20px 0;
+    line-height: 1.4;
+}
+
+.schedule-container .schedule-content {
+    display: flex;
+    align-items: center;
+}
+
+.plan-container .plan-change,
+.schedule-container .schedule-change,
+.summary-container .summary-change
+ {
+    margin-top: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.plan-container .fire-icon {
+    width: 14px;
+    height: 16px;
+}
+
+.schedule-container .schedule-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.schedule-container .days-icon {
+    width: 55px;
+    height: 55px;
+    margin: 0 15px;
+}
+
+.summary-container .summary-table .visa {
+    display: block;
+    margin-left: auto;
+    width: 32px;
+    height: 22px;
+}
+.summary-container .summary-table tr td {
+    vertical-align: middle;
+    height: 21px;
+    font-size: 16px;
+    line-height: 1;
+}
+.summary-container .summary-table tr td:first-child {
+    width: 205px;
+}
+.summary-container .summary-table tr td:not(:first-child) {
+    text-align: right;
+}
+.summary-container .summary-table tr td:nth-child(2n) {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.summary-container .summary-table tr:nth-child(6) {
+    border-top: 2px solid #000;
+}
+.summary-container .summary-table tr:nth-child(6) td {
+    padding-top: 15px;
+}
+.summary-container .summary-table tr:nth-child(6) td,
+.summary-container .summary-table tr:nth-child(5) td {
+    padding-bottom: 15px;
+}
+
+/*location styles*/
+.map-container {
+    color: #565353;
+    text-transform: uppercase;
+    border: 1px solid #eeeded;
+    border-radius: 20px;
+    margin: 0 auto 25px auto;
+    width: 380px;
+    box-sizing: border-box;
+    box-shadow: 0 7px 18px -2px #ececec;
+}
+
+.map-container .map {
+    width: 378px;
+    height: 110px;
+}
+.map-container .map-label {
+    margin: 15px 0 15px 15px;
+}
+.map-container .location-icon {
+    width: 12px;
+    height: 16px;
+}
+.map-container .map-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15px;
+    border-top: 1px solid #eeeded;
+    padding: 24px 0;
+}
+
+.map-container .map-content .address {
+    text-transform: none;
+    line-height: 1.2;
+}
+
+.map-container .map-content .change {
+    cursor: pointer;
+}
+
+/*info styles*/
+.info  {
+    color: #565353;
+    text-align: center;
+    text-shadow: 1px 1px 2px #bbbaba;
+    line-height: 1.4;
+    margin: 30px 78px 75px;
+}
+
+.hand {
+    display: block;
+    width: 276px;
+    height: 234px;
+    margin: 0 auto;
+}
+
+/*something new styles*/
+.new-container {
+    margin: 45px auto 80px;
+}
+
+.new-container .new-header {
+    font-size: 26px;
+    text-align: center; 
+}
+.new-container .new {
+    margin: 25px;
+    text-align: center;
+    color: #565353;
+    font-size: 16px;
+    line-height: 1.2;
+}
+.new-container .new-btn {
+    width: 380px;
+    height: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    background: #565353;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*common questions styles*/
+.questions-container {
+    margin: auto 15px;
+    border-top: 3px solid #eeeded;
+    padding-top: 65px;
+    border-bottom: 3px solid #eeeded;
+    padding-bottom: 83px;
+}
+.questions-container table {
+    width: 100%;
+}
+.questions-container .questions-header {
+    font-size: 26px;
+    color: #565353;
+    line-height: 1.1;
+    padding-right: 183px;
+}
+
+.questions-container .question {
+    border-bottom: 1px solid #eeeded;
+    font-size: 16px;
+    color: #565353;
+    padding: 30px 0 15px 50px;
+    position: relative;
+}
+
+.questions-container .question::before {
+    content: "+";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    font-size: 25px;
+    color: #565353;
+}
+
+/*help styles*/
+.help-container {
+    margin: 30px 15px 45px;
+    color: #565353;
+}
+
+.help-container .help {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.help-container .contact b {
+    text-transform: uppercase;
+}
+
+/*footer styles*/
+.footer {
+    background:  url(../img/black-wave.png) #1d1c1c no-repeat  top;
+    width: 410px;
+    padding-top: 75px;
+}
+
+.cash-container {
+    height: 175px;
+    width: 380px;
+    margin: 0 auto 65px;
+    background: linear-gradient(135deg, #02ab84,#71c045, #95d074);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.cash-container .cash-img {
+    height: 155px;
+    width: 135px;
+    display: block;
+}
+
+.cash-container .cash-info {
+    color: #fff;
+    font-size: 16px;
+    width: 175px;
+    line-height: 1.2;
+}
+.cash-container .cash-info h1 {
+    font-size: 19px;
+    padding-bottom: 7px;
+}
+.cash-container .cash-info a {
+    padding-top: 30px;
+    display: block;
+    color: #fff;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social img {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.hash-tag {
+    text-align: center;
+    display: block;
+    margin: 0 15px;
+    padding: 30px 0; 
+    border-bottom: 2px solid #434343;
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer-info {
+    padding: 35px 15px;
+    text-align: center;
+    color: #fff;
+    line-height: 1.4;   
+}
+
+.footer-info div:first-child {
+    padding: 0 45px;
+}
+.footer-info div:nth-child(2) {
+    margin: 30px 0;
+}
+
+.footer-info div:nth-child(3) {
+    padding: 0 25px;
+}
