@@ -1,6 +1,16 @@
-// Emulation of user information taken from the server
+/* Emulation of user information received from the server
+share_code - random value is send to method to emulate
+             different values received from the server
+mill_plan  - random value for name is send to method to emulate
+             different values received from the server
+*/
 var user = {
     share_code: Math.round(Math.random()) ? 'SZOEL99' : null,
+    mill_plan: {
+        name: Math.round(Math.random()) ? 'whole30' : 'Low carb',
+        energy: 1500,
+        days: 3
+    },
     summary: {
         'subtotal': ['$262.89', '$223.46'],
         'tax': ['', '$223.46'],
@@ -11,10 +21,12 @@ var user = {
     }
 };
 
-setSummaryTable ();
-setShareCode();
+setSummaryTable(user);
+setShareCode(user);
+setMillPlan(user);
 
-function setSummaryTable() {
+/*Method set weekly summary table received from the server*/
+function setSummaryTable(user) {
     var table = document.querySelector('.summary-table');
 
     var summary = user.summary;
@@ -35,8 +47,17 @@ function setSummaryTable() {
     });
 }
 
-function setShareCode() {
+/*Method set share code received from the server*/
+function setShareCode(user) {
     var shareCode = document.querySelector('.share-code');
     userShareCode = user.share_code;
     shareCode.innerHTML = userShareCode ? 'share code: ' + user.share_code : 'Sign up to get code';
+}
+
+
+/*Method set mill plan received from the server*/
+function setMillPlan(user) {
+    var millPlan = document.querySelector('.mill-plan');
+    var millPlanInfo = user.mill_plan;
+    millPlan.innerHTML = millPlanInfo.name + ' <br>' + millPlanInfo.days + ' days / wk  •  ' + millPlanInfo.energy + ' cal / day';
 }
