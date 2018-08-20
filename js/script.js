@@ -54,7 +54,6 @@ function setShareCode(user) {
     shareCode.innerHTML = userShareCode ? 'share code: ' + user.share_code : 'Sign up to get code';
 }
 
-
 /*Method set mill plan received from the server*/
 function setMillPlan(user) {
     var millPlan = document.querySelector('.mill-plan');

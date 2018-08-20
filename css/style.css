@@ -25,6 +25,7 @@
     display: flex;
     align-items: center;
 }
+
 .label-container img {
     width: 134px;
     height: 26px;
@@ -40,14 +41,17 @@
     background: linear-gradient(to bottom right, #f04c34, #f034a8);
     padding: 15px;
 }
+
 .make-changes-container .greeting {
     font-size: 19px;
     margin: 35px 0;
 }
+
 .make-changes-container .making-changes {
     font-size: 26px;
     margin: 35px 90px 10px 0;  
 }
+
 .make-changes-container .make-changes-btn {
     background: #fff;
     display: block;
@@ -74,6 +78,7 @@
     box-sizing: border-box;
     box-shadow: 0 7px 18px -2px #ececec;
 }
+
 .schedule-container,
 .summary-container {
     margin-top: 0;
@@ -87,8 +92,7 @@
 
 .plan-container .plan-content,
 .schedule-container .schedule-content,
-.summary-container .summary-content
-{
+.summary-container .summary-content{
     text-transform: none;
     font-size: 16px;
     word-wrap: wrap;
@@ -105,8 +109,7 @@
 
 .plan-container .plan-change,
 .schedule-container .schedule-change,
-.summary-container .summary-change
- {
+.summary-container .summary-change{
     margin-top: 15px;
     text-align: center;
     cursor: pointer;
@@ -134,18 +137,22 @@
     width: 32px;
     height: 22px;
 }
+
 .summary-container .summary-table tr td {
     vertical-align: middle;
     height: 21px;
     font-size: 16px;
     line-height: 1;
 }
+
 .summary-container .summary-table tr td:first-child {
     width: 205px;
 }
+
 .summary-container .summary-table tr td:not(:first-child) {
     text-align: right;
 }
+
 .summary-container .summary-table tr td:nth-child(2n) {
     padding-left: 7px;
     padding-right: 7px;
@@ -154,9 +161,11 @@
 .summary-container .summary-table tr:nth-child(6) {
     border-top: 2px solid #000;
 }
+
 .summary-container .summary-table tr:nth-child(6) td {
     padding-top: 15px;
 }
+
 .summary-container .summary-table tr:nth-child(6) td,
 .summary-container .summary-table tr:nth-child(5) td {
     padding-bottom: 15px;
@@ -178,13 +187,16 @@
     width: 378px;
     height: 110px;
 }
+
 .map-container .map-label {
     margin: 15px 0 15px 15px;
 }
+
 .map-container .location-icon {
     width: 12px;
     height: 16px;
 }
+
 .map-container .map-content {
     display: flex;
     justify-content: space-between;
@@ -257,9 +269,11 @@
     border-bottom: 3px solid #eeeded;
     padding-bottom: 83px;
 }
+
 .questions-container table {
     width: 100%;
 }
+
 .questions-container .questions-header {
     font-size: 26px;
     color: #565353;
@@ -333,6 +347,7 @@
     font-size: 19px;
     padding-bottom: 7px;
 }
+
 .cash-container .cash-info a {
     padding-top: 30px;
     display: block;
@@ -344,6 +359,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .social img {
     width: 45px;
     height: 45px;
