@@ -18,6 +18,10 @@
     margin-left: 10px;
 }
 
+.line-through {
+    text-decoration: line-through;
+}
+
 /*label styles*/
 .label-container {
     height: 66px;
